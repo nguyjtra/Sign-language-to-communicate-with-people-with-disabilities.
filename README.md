@@ -4,7 +4,10 @@ This project is a computer vision system designed to automatically recognize and
 The goal is to develop a tool that can help bridge the communication gap for the deaf and speech-impaired community by enabling potential real-time translation of sign language. This project serves as a proof-of-concept for assistive tools in classrooms, public spaces, and mobile apps.
 
 ## 📊 Dataset
-Our dataset consists of **over 20,000 static images** used for training and testing.
+
+Our task is to build a system that can analyze an image of a hand gesture and predict the character it represents. For this project, we will be focusing on a sample of 5 letters: **V, L, E, F, and B**. Using over 2,700 training images and nearly 300 testing images (dataset consists of **over 20,000 static images**),
+
+## 🔬 Methodology
 * The data is organized into **labeled folders** that match each alphabet letter gesture.
 * We believe this dataset is highly suitable for image classification tasks within computer vision.
 
@@ -13,9 +16,6 @@ This project will apply several key technologies, including:
 * **Transfer Learning** using the powerful **VGG16** network
 * **Background Removal** techniques to isolate the hand gestures
 
-Our task is to build a system that can analyze an image of a hand gesture and predict the character it represents. For this project, we will be focusing on a sample of 5 letters: **V, L, E, F, and B**. Using over 2,700 training images and nearly 300 testing images,
-
-## 🔬 Methodology
 We use a Convolutional Neural Network (CNN) architecture to classify the hand sign images. Our approach is structured as follows:
 
 * **Baseline Model:** We start by implementing a standard shallow CNN (inspired by architectures like LeNet or simple VGG variants) to establish a baseline performance.
