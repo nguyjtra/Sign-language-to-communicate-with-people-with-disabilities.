@@ -8,16 +8,22 @@ Our dataset consists of **over 20,000 static images** used for training and test
 * The data is organized into **labeled folders** that match each alphabet letter gesture.
 * We believe this dataset is highly suitable for image classification tasks within computer vision.
 
+This project will apply several key technologies, including:
+* **Convolutional Neural Networks (CNN)**
+* **Transfer Learning** using the powerful **VGG16** network
+* **Background Removal** techniques to isolate the hand gestures
+
+Our task is to build a system that can analyze an image of a hand gesture and predict the character it represents. For this project, we will be focusing on a sample of 5 letters: **V, L, E, F, and B**.
+
 ## 🔬 Methodology
-We use a **Convolutional Neural Network (CNN)** architecture to classify the hand sign images. Our approach is structured as follows:
+We use a Convolutional Neural Network (CNN) architecture to classify the hand sign images. Our approach is structured as follows:
 
-1.  **Baseline Model:** We start by implementing a standard shallow CNN (inspired by architectures like LeNet or simple VGG variants) to establish a baseline performance.
+* **Baseline Model:** We start by implementing a standard shallow CNN (inspired by architectures like LeNet or simple VGG variants) to establish a baseline performance.
 
-2.  **Improved Model:** We then explore and implement several enhancements to improve upon the baseline:
+* **Improved Model:** We then explore and implement several enhancements to improve upon the baseline:
     * **Data Augmentation:** Applying transformations to the training data to increase model robustness and prevent overfitting.
     * **Transfer Learning:** Fine-tuning a pre-trained network (like VGG, ResNet, or MobileNet) to leverage features learned from broader, large-scale image datasets.
-    * **Regularization:** Incorporating **Dropout** and **Batch Normalization** for more stable training and better generalization.
-
+    * **Regularization:** Incorporating Dropout and Batch Normalization for more stable training and better generalization.
 ### 🛠️ Tech Stack
 * PyTorch
 * Keras
