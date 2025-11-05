@@ -13,7 +13,7 @@ This project will apply several key technologies, including:
 * **Transfer Learning** using the powerful **VGG16** network
 * **Background Removal** techniques to isolate the hand gestures
 
-Our task is to build a system that can analyze an image of a hand gesture and predict the character it represents. For this project, we will be focusing on a sample of 5 letters: **V, L, E, F, and B**.
+Our task is to build a system that can analyze an image of a hand gesture and predict the character it represents. For this project, we will be focusing on a sample of 5 letters: **V, L, E, F, and B**. Using over 2,700 training images and nearly 300 testing images,
 
 ## 🔬 Methodology
 We use a Convolutional Neural Network (CNN) architecture to classify the hand sign images. Our approach is structured as follows:
