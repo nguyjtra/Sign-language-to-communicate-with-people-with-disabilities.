@@ -1,0 +1,14 @@
+# Bỏ qua thư mục dữ liệu (QUAN TRỌNG)
+data/
+data_kaggle/
+archive/
+
+# Bỏ qua file model nặng (nếu file > 100MB sẽ không up được)
+models/*.h5
+models/*.keras
+
+# Bỏ qua file hệ thống/ảo
+__pycache__/
+venv/
+.DS_Store
+.vscode/

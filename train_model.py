@@ -1,20 +1,20 @@
 import os
 import warnings
 import cv2
-import keras
+import tensorflow.keras as keras  # SỬA DÒNG NÀY
 import matplotlib.pyplot as plt
 import matplotlib.style as style
 import numpy as np
 import pandas as pd
 from PIL import Image
-from keras import models, layers, optimizers
-from keras.applications import VGG16
-from keras.callbacks import EarlyStopping, ModelCheckpoint
-from keras.layers import Dense, Dropout, Flatten
-from keras.models import Model
-from keras.preprocessing import image as image_utils
-from keras.preprocessing.image import ImageDataGenerator
-from keras.utils import to_categorical
+from tensorflow.keras import models, layers, optimizers  # THÊM tensorflow.
+from tensorflow.keras.applications import VGG16  # THÊM tensorflow.
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint  # THÊM tensorflow.
+from tensorflow.keras.layers import Dense, Dropout, Flatten  # THÊM tensorflow.
+from tensorflow.keras.models import Model  # THÊM tensorflow.
+from tensorflow.keras.preprocessing import image as image_utils  # THÊM tensorflow.
+from tensorflow.keras.preprocessing.image import ImageDataGenerator  # THÊM tensorflow.
+from tensorflow.keras.utils import to_categorical  # THÊM tensorflow.
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from PIL import ImageFile
@@ -45,7 +45,7 @@ gesture_names = {0: 'E',
                  4: 'B'}
 
 
-image_path = 'data'
+image_path = './data'
 models_path = 'models/saved_model.hdf5'
 rgb = False
 imageSize = 224

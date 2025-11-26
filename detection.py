@@ -3,9 +3,8 @@
 import copy
 import cv2
 import numpy as np
-from keras.models import load_model
+from tensorflow.keras.models import load_model  # THÊM tensorflow. ở đây
 import time
-
 # Cac khai bao bien
 prediction = ''
 score = 0
